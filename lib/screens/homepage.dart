@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
           Category(
             tap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const ColorPage();
+                return  ColorPage();
               }));
             },
             text: 'Colors',
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
           Category(
             tap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const PhasePage();
+                return  PhasePage();
               }));
             },
             text: 'Phrases',
