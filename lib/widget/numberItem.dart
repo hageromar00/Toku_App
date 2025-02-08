@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:language_app/model/item.dart';
 
 class NumbersItem extends StatelessWidget {
-  const NumbersItem({super.key, required this.item});
+  const NumbersItem({super.key, required this.item,required this.color});
   final Item item;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      color: Colors.grey,
+      color: color,
       child: Row(
         children: [
           Container(
