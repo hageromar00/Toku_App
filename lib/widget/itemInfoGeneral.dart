@@ -32,7 +32,9 @@ class ItemInfoGeneral extends StatelessWidget {
             flex: 1,
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                 item.playSound();
+              },
               icon: const Icon(
                 Icons.play_arrow,
                 color: Colors.white,

@@ -12,19 +12,19 @@ class MembersPage extends StatelessWidget {
       image: 'assets/images/family_members/family_father.png',
     ),
     Item(
-      sound: 'sounds/numbers/number_two_sound.mp3',
+      sound: 'sounds/family_members/mother.wav',
       jpName: 'Māma',
       enName: 'Mother',
       image: 'assets/images/family_members/family_mother.png',
     ),
     Item(
-      sound: 'sounds/numbers/number_one_sound.mp3',
+      sound: 'sounds/family_members/daughter.wav',
       jpName: 'Nuer',
       enName: 'daughter',
       image: 'assets/images/family_members/family_daughter.png',
     ),
     Item(
-      sound: 'sounds/numbers/number_one_sound.mp3',
+      sound: 'assets/sounds/family_members/grandfather.wav',
       jpName: 'Yéye',
       enName: 'Grandfather',
       image: 'assets/images/family_members/family_grandfather.png',
