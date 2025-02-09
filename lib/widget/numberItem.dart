@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:language_app/model/item.dart';
+import 'package:language_app/widget/itemInfoGeneral.dart';
 
 class NumbersItem extends StatelessWidget {
   const NumbersItem({super.key, required this.item,required this.color});
@@ -17,38 +18,7 @@ class NumbersItem extends StatelessWidget {
             color: const Color(0xffFFF6DC),
             child: Image.asset(item.image!),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  item.enName!,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                ),
-                Text(
-                  item.jpName!,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                )
-              ],
-            ),
-          ),
-          const Spacer(
-            flex: 1,
-          ),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.play_arrow,
-                color: Colors.white,
-                size: 28,
-              ))
+      Expanded(child: ItemInfoGeneral(item: item))
         ],
       ),
     );
